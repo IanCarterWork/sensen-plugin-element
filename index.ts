@@ -45,11 +45,11 @@ class SensenWireframe{
 
     static make(name : string, construct : CustomElementConstructor){
 
-        const tag = `wireframe-${ name }`
+        const tag = `wireframe-${ name }`;
 
         if(!customElements.get(tag)){
 
-            customElements.define(tag, construct)
+            customElements.define(tag, construct);
 
         }
 
@@ -69,7 +69,7 @@ class SensenWireframe{
 
         ;
 
-        return new this()
+        return new this();
         
     }
     
@@ -77,7 +77,7 @@ class SensenWireframe{
 
 
 
-export default SensenWireframe
+export default SensenWireframe;
 
 
 
