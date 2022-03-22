@@ -1,34 +1,86 @@
-import { RawComponent, SensenElement } from "sensen-jutsu";
 
 
 
-export default function SensenPluginElement<
+/**
+ * Sensen Wireframe Header
+ */
+export class WireframeHeaderElement extends HTMLElement{
 
-    State extends SensenPluginElementState
+
     
->($ : ComponentAttributes<State>) : SensenRawComponent<State>{
+}
 
-    const config : RawComponentConfig = {
 
-        namespace: {
-            
-            prefix: 'plugin',
 
-            attribute: 'plugin'
-            
+
+
+
+/**
+ * Sensen Wireframe Body
+ */
+export class WireframeBodyElement extends HTMLElement{
+
+
+    
+}
+
+
+
+
+
+
+/**
+ * Sensen Wireframe Menu
+ */
+export class WireframeMenuElement extends HTMLElement{
+
+
+    
+}
+
+
+
+
+class SensenWireframe{
+
+    static make(name : string, construct : CustomElementConstructor){
+
+        const tag = `wireframe-${ name }`
+
+        if(!customElements.get(tag)){
+
+            customElements.define(tag, construct)
+
         }
+
+        return this;
         
     }
 
-    const index = `plugin-${ $.name }`
+    static $using(config? : IWireframeConfig){
 
-    window.$SensenComponents[ index ] = RawComponent<State>($, config)
+        this
+        
+            .make('header', WireframeHeaderElement)
 
-    SensenElement.$use('plugin', $.name, window.$SensenComponents[ index ] as CustomElementConstructor);
+            .make('body', WireframeBodyElement)
+
+            .make('menu', WireframeMenuElement)
+
+        ;
+
+        return new this()
+        
+    }
     
-    return window.$SensenComponents[ index ] as SensenRawComponent<State>;
-    
-}
+} 
+
+
+
+export default SensenWireframe
+
+
+
 
 
 

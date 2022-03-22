@@ -1,7 +1,7 @@
 {
-  "name": "sensen-plugin-element",
+  "name": "sensen-wireframe",
   "version": "0.0.1",
-  "description": "a sensen plugin element handler",
+  "description": "a sensen wireframe elements",
   "main": "index.ts",
   "author": "G.Y. Yannick",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
-    "sensen-jutsu": "^0.0.84",
+    "sensen-jutsu": "^0.0.85",
     "typescript": "^4.6.2"
   }
 }

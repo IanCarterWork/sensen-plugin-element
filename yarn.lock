@@ -98,10 +98,10 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-sensen-jutsu@^0.0.84:
-  version "0.0.84"
-  resolved "https://registry.yarnpkg.com/sensen-jutsu/-/sensen-jutsu-0.0.84.tgz#779bae469327e3766d71308d854357f4a9c78bcc"
-  integrity sha512-SUe1pcPqUdmWi0uRuPL0U7Xgv5JfepH9LlH0s0G7+j5pzpVl2Y+RV8VQBYSpDXr7suSqqW0ZmOn7Hng3jAL+0A==
+sensen-jutsu@^0.0.85:
+  version "0.0.85"
+  resolved "https://registry.yarnpkg.com/sensen-jutsu/-/sensen-jutsu-0.0.85.tgz#87bc8eacb0c4ec64b76f10758bf80d695c9e87f1"
+  integrity sha512-AUXa1KCIp26GqvIX3jxWZq2HI+Hv0poI/oRcqMif74znKXIPPrdg9GSAsNGA/AFRDB9alfXjsNE2i2Kat/xWKA==
   dependencies:
     "@types/ejs" "^3.1.0"
     ejs "^3.1.6"
