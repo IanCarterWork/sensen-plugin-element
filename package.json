@@ -1,8 +1,8 @@
 {
   "name": "sensen-wireframe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a sensen wireframe elements",
-  "main": "index.ts",
+  "main": "index.js",
   "author": "G.Y. Yannick",
   "license": "MIT",
   "dependencies": {},
